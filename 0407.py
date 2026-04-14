@@ -88,7 +88,7 @@ def main():
                     ax.set_xlabel("빈도수")
                     st.pyplot(fig)
 
-            # 2. 워드클라우드 출력
+            #워드클라우드 출력
             if show_wordcloud:
                 st.subheader("워드클라우드")
                 wc = WordCloud(
@@ -106,7 +106,7 @@ def main():
                 st.pyplot(fig_wc)
                 
         else:
-            st.error(f"업로드한 파일에 '{col_name}' 컬럼이 존재하지 않습니다. 컬럼명을 다시 확인해 주세요.")
+            st.error(f"업로드한 파일에 '{col_name}' 컬럼이 존재하지 않습니다.")
 
 if __name__ == "__main__":
     main()
